@@ -1,0 +1,41 @@
+sudo useradd -m vipin
+
+
+sudo /etc/init.d/ssh force-reload
+sudo /etc/init.d/ssh restart
+
+sudo useradd -m  -e 2023-05-31 vipin
+sudo userdel -r vipin
+
+sudo deluser --remove-home demo
+sudo deluser demo sudo
+
+Adding a user in sudo group
+sudo usermod -aG sudo vipin
+or
+sudo gpasswd -a test1 sudo
+
+sudo gpasswd -d test1 sudo
+
+
+groups test1
+
+
+ls --- list out thefiles/dir 
+
+
+ls -a 
+
+
+1 -----x 
+
+2 ---w 
+
+4-----r
+
+
+chmod 777  demo.txt
+
+rw-rw-r-- 
+
+664
